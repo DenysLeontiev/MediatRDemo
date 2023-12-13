@@ -10,7 +10,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 
-builder.Services.AddPersistanceServices(builder.Services);
+builder.Services.AddPersistanceServices();
 
 var app = builder.Build();
 
