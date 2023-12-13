@@ -4,11 +4,11 @@ using Persistance.Models;
 
 namespace Persistance.Features.Person.Queries;
 
-public class GetPersonListQueryHandler : IRequestHandler<GetPersonListQuery, List<PersonModel>>
+public class GetPersonListHandler : IRequestHandler<GetPersonListQuery, List<PersonModel>>
 {
 	private readonly IDataAccess _dataAccess;
 
-	public GetPersonListQueryHandler(IDataAccess dataAccess)
+	public GetPersonListHandler(IDataAccess dataAccess)
 	{
 		_dataAccess = dataAccess;
 	}
